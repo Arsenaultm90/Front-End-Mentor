@@ -110,4 +110,25 @@ body {
 
 /* Media query for Product Card - Eau Du Parfume */
 @media screen and (min-width: 420px) {
+	.product-card-inner-container {
+		height: 50%;
+		width: 50%;
+		display: flex;
+	}
+
+	.product-card-preview-img {
+		height: 100%;
+		width: 100%;
+		border-radius: 15px 0 0 15px;
+		background-image: url('./images/image-product-desktop.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.product-card-preview-img img {
+		display: none;
+		height: 100%;
+		width: 100%;
+		border-radius: 15px 0 0 15px;
+	}
 }

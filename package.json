@@ -1,0 +1,22 @@
+{
+	"name": "productcard",
+	"version": "1.0.0",
+	"description": "## Welcome! 👋",
+	"main": "index.js",
+	"scripts": {
+		"build": "./build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Arsenaultm90/Front-End-Mentor.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Arsenaultm90/Front-End-Mentor/issues"
+	},
+	"homepage": "https://github.com/Arsenaultm90/Front-End-Mentor#readme",
+	"dependencies": {
+		"netlify": "^12.0.0"
+	}
+}

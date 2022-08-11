@@ -148,10 +148,83 @@ body {
 	display: grid;
 	grid-template-rows: 45% 55%;
 	justify-content: center;
+	position: relative;
 }
 
-.cards-container {
+.back-card {
 	position: absolute;
+	width: 100%;
+	top: 5%;
+	left: 15%;
+}
+
+.back-card img {
+	width: 80%;
+}
+
+.front-card {
+	position: absolute;
+	top: 20%;
+	left: 20px;
+	width: 100%;
+}
+
+.fill-dot {
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left: 4%;
+	top: 8%;
+}
+
+.empty-dot {
+	height: 15px;
+	width: 15px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left: 14%;
+	top: 12%;
+}
+
+.front-card-text {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 60%;
+	width: 312px;
+}
+
+.front-card-text p {
+	font-family: 'Space Grotesk', sans-serif;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 2px;
+	width: 90%;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.front-card-bottom-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+
+.front-card-bottom-text p {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.front-card img {
+	width: 80%;
 }
 
 .top img {
@@ -205,6 +278,10 @@ body {
 	font-size: 18px;
 }
 
+.input-item input:focus {
+	border-color: hsl(278, 68%, 11%);
+}
+
 .input-item input::placeholder {
 	color: hsl(270, 3%, 87%);
 }
@@ -234,9 +311,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-}
-
-.cvc input {
 }
 
 .bottom button {

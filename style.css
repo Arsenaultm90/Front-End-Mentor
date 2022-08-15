@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -15,8 +15,8 @@ font-family: 'Montserrat', sans-serif;
  */
 
 body {
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 }
 
 /* Product Card CSS - Eau De Parfume */
@@ -41,6 +41,7 @@ body {
 .product-card-preview-img {
 	height: 100%;
 	width: 100%;
+	overflow-y: hidden;
 }
 
 .product-card-preview-img img {
@@ -403,5 +404,78 @@ body {
 
 	.cvc {
 		width: 100%;
+	}
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Advice Generator */
+
+.advice-generator-container {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: hsl(218, 23%, 16%);
+	position: relative;
+}
+
+.advice-generator-main {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	min-height: 450px;
+}
+
+.advice-generator__content-container {
+	min-height: 400px;
+	width: 100%;
+	background-color: hsl(217, 19%, 24%);
+	border-radius: 15px;
+	font-family: 'Manrope', sans-serif;
+	color: hsl(193, 38%, 86%);
+	display: grid;
+	grid-template-rows: 20% 60% 20%;
+}
+
+.advice-generator__text-title {
+	font-size: 13px;
+	color: hsl(150, 100%, 66%);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.advice-generator__text-quote {
+	font-size: 28px;
+	text-align: center;
+	margin: auto 20px;
+}
+
+.advice-generator__content-container svg {
+	margin-inline: auto;
+}
+
+.advice-generator__btn {
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	border: none;
+	background-color: hsl(150, 100%, 66%);
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.advice-generator__btn:hover {
+	box-shadow: 0 0 10px 3px hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 420px) {
+	.advice-generator-main {
+		width: 600px;
 	}
 }
